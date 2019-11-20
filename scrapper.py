@@ -17,8 +17,8 @@ time_points = []
 
 
 #Case sensitive and Whole word
-case_sensitive = 1;
-whole_word = 1;
+case_sensitive = 1
+whole_word = 1
 
 if case_sensitive == 0:		# If NOT case sensitive, make everything in lower case
 	user_input = user_input.lower()
