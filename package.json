@@ -1,0 +1,19 @@
+{
+  "name": "you_tube_project",
+  "version": "1.0.0",
+  "description": "Find a word in You Tube video",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/agrawaltejas01/You_Tube_Project.git"
+  },
+  "author": "Tejas Agrawal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/agrawaltejas01/You_Tube_Project/issues"
+  },
+  "homepage": "https://github.com/agrawaltejas01/You_Tube_Project#readme"
+}
