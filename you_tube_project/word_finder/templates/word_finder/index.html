@@ -1,0 +1,64 @@
+{% load static %}
+<!DOCTYPE HTML>
+<html>
+<TITLE>
+	FIND IN VIDEO
+</TITLE>
+
+<HEAD>	
+	<meta name="viewport" content="width=device-width, initial-scale=1">	
+	<link rel="stylesheet" type="text/css" href="{% static 'css/style_index.css'%}">
+
+</HEAD>
+
+<BODY>
+
+	<header>
+		<h2> Find a word in You Tube Video</h2>
+	</header>
+
+	<div class="container">
+
+		<form id="form" action="found.html" method="POST">
+			{% csrf_token %}			
+
+	  		<!-- URl -->
+	  		<div class="left">
+	  			<label>URL &nbsp :</label> 
+	  		</div> 
+
+	  		<div class="right">
+		  		<input type="text" id="url" name="URL" 
+		  		placeholder="https://www.youtube.com/watch?v=abcd">
+		    </div>
+
+		    <br>
+
+		    <!-- word -->
+		    <div class="left">
+	  			<label>Word &nbsp :</label>
+	  		</div> 
+
+	  		<div class="right">
+		  		<input type="text" id="word" name="WORD" placeholder="abcd">
+		    </div>		  		     
+
+
+		    <br>			
+	</div>		
+
+	<div class="container">
+
+    		<br>	
+		    <!-- Submit -->		
+		    <br>	<br>    
+		    <input type="submit" id="submit_button" value="Submit">
+    </div>
+		   
+	</form>
+
+	<script type="text/javascript" src="{% static 'js/script_index.js'%}"></script>
+    
+		
+</BODY>
+</html>

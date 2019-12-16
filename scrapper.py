@@ -9,7 +9,10 @@ video_id = video = query["v"][0]
 
 #Get Transcript
 from youtube_transcript_api import YouTubeTranscriptApi
-transcript = YouTubeTranscriptApi.get_transcript(video_id)
+try:
+	transcript = YouTubeTranscriptApi.get_transcript(video_id)
+except :
+	print("Error")
 #Returns time in second
 
 user_input = "player"

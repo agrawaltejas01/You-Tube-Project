@@ -1,0 +1,92 @@
+<!DOCTYPE HTML>
+<html>
+<TITLE>
+	FIND IN VIDEO
+</TITLE>
+
+<HEAD>	
+	<meta name="viewport" content="width=device-width, initial-scale=1">	
+	<link rel="stylesheet" type="text/css" href="style_index.css">
+
+</HEAD>
+
+<BODY>
+
+	<header>
+		<h2> Find a word in You Tube Video</h2>
+	</header>
+
+	<div class="container">
+
+	  <form id="form" action="found.html" method="GET">
+
+	  		<!-- URl -->
+	  		<div class="left">
+	  			<label>URL &nbsp :</label> 
+	  		</div> 
+
+	  		<div class="right">
+		  		<input type="text" id="url" name="URL" 
+		  		placeholder="https://www.youtube.com/watch?v=abcd">
+		    </div>
+
+		    <br>
+
+		    <!-- word -->
+		    <div class="left">
+	  			<label>Word &nbsp :</label>
+	  		</div> 
+
+	  		<div class="right">
+		  		<input type="text" id="word" name="WORD" placeholder="abcd">
+		    </div>		  		     
+
+
+		    <br>			
+	</div>	
+
+	<div class="check-container">
+
+    		<br><br>
+    		<div class="left">
+	  			<label class="check-text">Whole Word &nbsp &nbsp:</label>
+	  		</div>
+
+	  		<!-- <div class="right"> -->
+	    		<label class="checkbox-label">
+	    			<input id="whole_word" type="checkbox" name="" value="whole_word">
+	    				<!-- <label class="check-text">Whole word</label>    				 -->
+	    			<span class="checkbox-custom"></span>
+	    		</label>
+    		<!-- </div> -->
+
+    		<br>
+    		<br>
+    		<div class="left">
+	  			<label class="check-text">Case Sensitive  :</label>
+	  		</div>
+
+	  		<!-- <div class="right"> -->
+	    		<label class="checkbox-label">
+	    			<input id="case_sensitive" type="checkbox" name="" value="case_sensitive">
+	    				<!-- <label class="check-text">Whole word</label>    				 -->
+	    			<span class="checkbox-custom"></span>
+	    		</label>
+    		<!-- </div> -->
+	</div>
+
+	<div class="container">
+
+    		<br>	
+		    <!-- Submit -->		
+		    <br>	<br>    
+		    <input type="submit" id="submit_button" value="Submit">
+    </div>
+		   
+	</form>
+
+	<script type="text/javascript" src="script_index.js"></script>
+    
+		
+</BODY>
+</html>

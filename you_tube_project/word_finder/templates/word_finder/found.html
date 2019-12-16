@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+    <title>
+        RESULT
+    </title>
+
+    <HEAD>	
+            <meta name="viewport" content="width=device-width, initial-scale=1">	
+            <link rel="stylesheet" type="text/css" href="{% static 'css/style_found.css' %}">
+        
+        </HEAD>
+
+    <body>
+        <div id = "related_links">
+        <ul>
+            {% for i in zipped %}
+            <li>                
+                <a href="{{i.0}}">{{i.1}}</a>
+            </li>           
+            {% endfor %}
+        </ul>
+    </div>
+    </body>
+
+</html>
